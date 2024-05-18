@@ -577,7 +577,7 @@ button:hover {
             padding: 0 10px;
         }
         
-        .row p {
+        .row-xp p {
             font-size: 15px;
             text-align: left;
             width: 130%;
@@ -612,7 +612,7 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-    .row p {
+    .row-xp p {
         font-size: 18px;
         text-align: left;
         width: 100%;
