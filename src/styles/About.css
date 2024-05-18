@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main {
+    flex-grow: 1;
+}
+.back-btn {
+    background-color: #f5f5f5;
+    color: #551F0C;
+    border: none;
+    font-size: 16px;
+    padding: 4px  20px;
+    width: 20%;
+}
+.back-btn:hover {
+    background-color: transparent;
+}
+.abtTitle   {
+    color: #551F0C;
+    font-size: 32px;
+}

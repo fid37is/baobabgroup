@@ -1,0 +1,91 @@
+    .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.teamComponent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.teamCard {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    padding: 30px;
+}
+
+.teamCard img {
+    width: 50%;
+    height: auto;
+}
+
+small, .teamCard, h3 {
+    text-align: left;
+}
+
+small {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.pstn1  {
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.pstn2  {
+    margin-bottom: 120px;
+    padding: 30px 0;
+}
+
+.carouselContainer {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .teamComponent {
+        display: block;
+        width: 100%;
+    }
+    .teamCard {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .teamCard img {
+        width: 40%;
+        height: auto;
+    }
+    .pstn1  {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    
+    .pstn2  {
+        margin-bottom: 0;
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .pstn1  {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    
+    .pstn2  {
+        margin-bottom: 0;
+        padding: 30px 0;
+    }
+    .teamCard {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
