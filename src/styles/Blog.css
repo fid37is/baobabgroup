@@ -10,7 +10,7 @@
 
 .topArea h1 {
     float: right;
-    padding: 3rem;
+    padding: 5rem;
     margin: auto;
     text-align: center;
     justify-content: center;
@@ -65,6 +65,9 @@
         padding-right: 1rem;
         width: 100%;
     }
+.topArea h1 {
+    padding: 3rem;
+}
 
     .content, p {
         display: block;
@@ -85,9 +88,6 @@
 
 
 @media (min-width: 601px) and (max-width: 1024px) {
-    .topArea h1 {
-        margin-top: 1.8rem;
-    }
     .content-text {
         padding-top: 0;
         padding-right: 1rem;

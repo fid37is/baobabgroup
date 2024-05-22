@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import '../styles/Blog.css';
 import Footer from './Footer';
 import BaobabFull from '../images/BaobabFull.png';
+
+
+
 const Blog = () => {
     const [posts, setPosts] = useState([]);
 
@@ -21,12 +24,10 @@ const Blog = () => {
                 <h1 className="heading">Blog Posts</h1>
             </div>
             <div className="topArea">
-                <h1>Engaging, Informative, Visual
-</h1>
+                <h1>Engaging, Informative, Visual</h1>
             </div>
             <div className="post-container">
                 {posts.map(post => (
-                    console.log(post),
                     <div key={post.id} className="post">
                         <div className="date">
                             <p>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
