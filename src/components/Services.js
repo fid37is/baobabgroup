@@ -1,6 +1,6 @@
 // React Component
 import React, { useState, useEffect } from 'react';
-import '../styles/Services.css'; // Import the CSS file
+import '../styles/Services.css';
 import '../App.css';
 import CallButton from '../components/CallButton';
 import Footer from '../components/Footer';
@@ -58,7 +58,7 @@ const Services = () => {
 
 const SalesforcePage = () => {
     return (
-        <>
+        <div className='serveContainer'>
         <div className='serve-text'>
             <h2>SALESFORCE SERVICES</h2>
             <p>
@@ -92,7 +92,7 @@ const SalesforcePage = () => {
                     We can help customise your Salesforce environment so that your staff can access all they need within a few clicks, keeping calls efficient and customers happy.
                 </p>
             </div>
-            <div className="column-servContent" data-aos="fade-right" >
+            <div className="column-servContent" data-aos="random" >
                 <img src={sf004} alt="contentImage" />
             </div>
         </section>
@@ -160,7 +160,7 @@ const SalesforcePage = () => {
                 </p>
             </div>
         </section>
-        </>
+        </div>
     );
 }
 

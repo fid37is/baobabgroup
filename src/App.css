@@ -41,8 +41,7 @@ button.submit-button:hover {
     .modal-form .submit-button {
         width: 50%;
     }
-
-    .phone-number {
+    .call-chat .phone {
         display: none;
     }
 

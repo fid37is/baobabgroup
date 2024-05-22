@@ -3,6 +3,7 @@ import React from 'react';
 import logo from '../images/Baobab_logo.png';
 import { FaBars, FaX } from "react-icons/fa6";
 import '../styles/Navbar.css';
+import { PhoneNumber } from './ContactInfo';
 
 function Navbar() {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -34,9 +35,7 @@ function Navbar() {
                 </ul>
 
                     <div className="call-chat">
-                        <div className="phone-number">
-                            <span>+1 (919) 724-9260</span>
-                        </div>
+                        <PhoneNumber className='phone contactInfo' number="+1 (919) 724-9260" />
                     </div>
                     <div className="button-container">
                         <NavLink to="/foundation" onClick={closeMenu}>
