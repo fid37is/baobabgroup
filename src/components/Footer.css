@@ -10,6 +10,15 @@
         justify-content: space-between;
         margin-bottom: 8%;
     }
+
+    .footer-row .phone,
+    .footer-row .email {
+        padding: 5px;
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
     
     .footer-column {
         flex: 1;
@@ -55,6 +64,15 @@
         margin-bottom: -17px;
     }
 
+    .contactInfo {
+        display: flex;
+        align-items: left;
+    }
+    
+    .contactInfo svg {
+        margin-right: 3px;
+    }
+
     @media screen and (max-width: 600px) {
         .footer-row {
             display: block;
@@ -62,7 +80,14 @@
             text-align: center;
             align-items: center;
         }
+        .contactInfo {
+            display: flex;
+            padding: 10px;
+        }
         
+        .contactInfo svg {
+            display: none;
+        }
     }
     
 

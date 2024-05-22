@@ -1,0 +1,24 @@
+.phone, .email {
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.phone:hover, .email:hover {
+    color: #e7835f;
+    cursor: pointer;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: left;
+}
+
+.contactInfo svg {
+    margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+    .contactInfo svg {
+        margin-right: -10%;
+    }
+}

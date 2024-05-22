@@ -7,8 +7,9 @@
     import bf3 from '../images/bf3.png'
     import bf4 from '../images/bf4.png'
     import ofhr1 from '../images/ofhr1.jpg';
-    import ohr2 from '../images/ohr2.jpg'
-    import '../styles/Foundation.css'
+    import ohr2 from '../images/ohr2.jpg';
+    import '../styles/Foundation.css';
+    import CallButton from '../components/CallButton';
 
     const Container = styled.div`
     display: flex;
@@ -155,11 +156,6 @@ const LargeImage = styled.img`
                         <p>
                             At EmpowerTech Lagos, we believe that everyone deserves a chance to reach their full potential. By removing financial barriers and offering scholarships to deserving candidates, we strive to create a diverse and inclusive learning environment that empowers our students to overcome challenges, unlock their potential, and transform their lives.
                         </p>
-                    </Text>
-                </div>
-                <div className="column">
-                    <Text className='glassy-background'>
-                        
                         <p>
                             To support the non-profit's operations, our company provides both financial resources and employee time. This means that our employees have the opportunity to volunteer their time to support the non-profit's initiatives, and the company provides financial support to cover operating expenses such as rent, utilities, and supplies.
                         </p>
@@ -169,11 +165,9 @@ const LargeImage = styled.img`
                         <p>
                             Join us in our quest to make a lasting impact on individuals and communities in Lagos, Nigeria, by providing access to world-class tech education and fostering the leaders of tomorrow. Together, we can change the world, one developer at a time.
                         </p>
-                        <p> --------------------------------------------------------------------------------------</p>
-                        
-                        <p> --------------------------------------------------------------------------------------</p>
                     </Text>
                 </div>
+                
             </div>
             
 
@@ -209,6 +203,9 @@ const LargeImage = styled.img`
             <ModalImage src={selectedImage} alt="Selected" />
             </Modal>
         </Container>
+        <div className="centered-container">
+                <CallButton />
+            </div>
         <Footer />
         </>
     );

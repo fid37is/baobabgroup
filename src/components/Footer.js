@@ -1,9 +1,10 @@
     // Footer.js
     import React from 'react';
     import '../components/Footer.css';
-    import { Link } from 'react-router-dom';
+    import { Link, NavLink } from 'react-router-dom';
     import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-    import Baobab_logo from '../images/Baobab_logo.png'
+    import Baobab_logo from '../images/Baobab_logo.png';
+    import { Email, PhoneNumber} from '../components/ContactInfo';
 
     const Footer = () => {
     return (
@@ -11,15 +12,15 @@
         <div className="footer-row">
             <div className="footer-column">
             <img src={Baobab_logo} alt="Logo" />
-            <p>support@baobabpartners.com</p>
-            <p>Phone: +1 (919) 724-9260</p>
+            <Email className='email contactInfo' email="team@baobabpartners.com" />
+            <PhoneNumber className='phone contactInfo' number="+19197249260" />
             </div>
             <div className="footer-column">
             <h3>Company</h3>
             <ul>
-                <li><Link href="#">About Us</Link></li>
-                <li><Link href="#">Blog</Link></li>
-                <li><Link href="#">Foundation</Link></li>
+                <li><NavLink to="/about">About Us</NavLink></li>
+                <li><NavLink to="/blog" >Blog</NavLink></li>
+                <li><NavLink to="/foundation">Foundation</NavLink></li>
                 <li><Link href="#">Privacy Policy</Link></li>
                 <li><Link href="#">Terms & Conditions</Link></li>
             </ul>
@@ -27,7 +28,7 @@
             <div className="footer-column">
             <h3>Customer Service</h3>
             <ul>
-                <li><Link href="#">Contact Us</Link></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
                 <li><Link href="#">Share Feedback</Link></li>
             </ul>
             </div>

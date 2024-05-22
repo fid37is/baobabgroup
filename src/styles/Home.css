@@ -366,11 +366,11 @@ button:hover {
 }
 
 .accordion-section p {
-    width: 70%;
+    width: 60%;
     text-align: center;
     margin-bottom: 5%;
-    line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .accordion-section h1 {
@@ -423,11 +423,11 @@ button:hover {
     background-repeat: no-repeat; 
     background-position: right; 
 }
-.accordion-section p {
+/* .accordion-section p {
     text-align: left;
     font-size: 15px;
     line-height: 30px;
-}
+} */
 
 @media screen and (max-width: 600px) {
         .accordion-section p {
@@ -559,7 +559,7 @@ button:hover {
         }
         .experience-section h1 {
             width: 70%;
-            font-size: 30px;
+            font-size: 20px;
         }
         .experience-section p {
             width: 80%;
@@ -572,7 +572,7 @@ button:hover {
             /* margin-top: 35%; */
             height: 800px;
         }
-        .row h2 {
+        .row-xp h2 {
             font-size: large;
             padding: 0 10px;
         }

@@ -1,8 +1,18 @@
 // React Component
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Services.css'; // Import the CSS file
+import '../App.css';
 import CallButton from '../components/CallButton';
 import Footer from '../components/Footer';
+import sf001 from '../images/sf001.png';
+import sf002 from '../images/sf002.png';
+import sf003 from '../images/sf003.png';
+import sf004 from '../images/sf004.png';
+import sf005 from '../images/sf005.png';
+import sf006 from '../images/sf006.png';
+import sf007 from '../images/sf007.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
     const [activePage, setActivePage] = useState('Salesforce');
@@ -10,6 +20,12 @@ const Services = () => {
     const handleClick = (page) => {
         setActivePage(page);
     }
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
 
     return (
         <>
@@ -30,8 +46,10 @@ const Services = () => {
             <div className="content">
                 {activePage === 'Salesforce' ? <SalesforcePage /> : <AppDevelopmentPage />}
             </div>
-            <CallButton />
-        <Footer />
+            <div className="centered-container">
+                <CallButton />
+            </div>
+            <Footer />
         </div>
         
         </>
@@ -40,21 +58,115 @@ const Services = () => {
 
 const SalesforcePage = () => {
     return (
-        <div>
-            <h2>Salesforce Page</h2>
-            <h5>
-                BAOBAB PARTNERS IS PROUD TO BE A SALESFORCE CERTIFIED CONSULTING PARTNER. OUR INTERNATIONAL TEAM IS MADE UP OF PROFESSIONALS WITH DECADES OF COMBINED PLATFORM EXPERIENCE. 
-            </h5>
-            <h5>
-                WHATEVER YOUR NEEDS, WE ARE ON HAND TO HELP DESIGN AND BUILD THE RIGHT SOLUTION FOR YOU.
-            </h5>
+        <>
+        <div className='serve-text'>
+            <h2>SALESFORCE SERVICES</h2>
+            <p>
+                Baobab Partners is proud to be a Salesforce certified consulting partner. Our international team is made up of professionals with decades of combined platform experiences.
+            </p>
+            <p>
+                Whatever your needs, we are on hand to help design and build the right solution for you.
+            </p>
         </div>
+        <section className="row-servContent">
+            <div className="column-servContent" data-aos="fade-right" >
+                <img src={sf001} alt="contentImage" />
+            </div>
+            <div className="column-servContent righText" data-aos="fade-left">
+                <h2> SALES PROCESS OPTIMIZATION</h2>
+                <p>
+                    Does your Sales team often feel that administration processes slow them down?
+                </p>
+                <p> 
+                    We work with you and your sales team to customize your Sales-force environment to make your sales processes fast, efficient, and user friendly, maximizing your teams time to focus on selling.
+                </p>
+            </div>
+        </section>
+        <section className="row-servContent">
+            <div className="column-servContent righText lefTest" data-aos="fade-left">
+                <h2>SERVICE PROCESS OPTIMIZATION</h2>
+                <p>
+                    In today's world, customers expect your staff to know them and their history with your company from the first time they call in or email for help.
+                </p>
+                <p> 
+                    We can help customise your Salesforce environment so that your staff can access all they need within a few clicks, keeping calls efficient and customers happy.
+                </p>
+            </div>
+            <div className="column-servContent" data-aos="fade-right" >
+                <img src={sf004} alt="contentImage" />
+            </div>
+        </section>
+        <section className="row-servContent">
+            <div className="column-servContent" data-aos="fade-down" >
+                <img src={sf005} alt="contentImage" />
+            </div>
+            <div className="column-servContent righText" data-aos="fade-up">
+                <h2>MARKETING AUTOMATION</h2>
+                <p>
+                    Gone are the days of un-targeted mass emailing to customers, but that doesn't mean reps should be sending emails one by one: targeted marketing automation can help you reach your customers when they need you with the help they are looking for.
+                </p>
+                <p> 
+                    From designing email templates to full customer journey implementation, we've got you covered!
+                </p>
+            </div>
+        </section>
+        <section className="row-servContent">
+            <div className="column-servContent righText lefTest" data-aos="zoom-out">
+                <h2>TRAINING</h2>
+                <p>
+                    We’re happy to share our Salesforce knowhow. As well as working to improve your instance, we also offer training in your environment for you and your staff!
+                </p>
+                <p> 
+                    Both group and one-to-one training packages all within your own salesforce environment to ensure you and your staff know how to get the best from your investment in Salesforce.
+                </p>
+            </div>
+            <div className="column-servContent" data-aos="zoom-in" >
+                <img src={sf002} alt="contentImage" />
+            </div>
+        </section>
+        <section className="row-servContent">
+            <div className="column-servContent" data-aos="fade-down" >
+                <img src={sf003} alt="contentImage" />
+            </div>
+            <div className="column-servContent righText" data-aos="fade-up">
+                <h2>DATA CLEANSING</h2>
+                <p>
+                    Data cleansing helps your team focus on your customer allowing them to find what they need fast, removing duplicates and fixing incomplete data. See the whole picture when looking at a customer's history with your business, without the clutter.
+                </p>
+            </div>
+        </section>
+        <section className="row-servContent">
+            <div className="column-servContent righText lefTest" data-aos="fade-left">
+                <h2>INTEGRATIONS</h2>
+                <p>
+                    There are thousands of apps that can be integrated into Salesforce - you’re probably using a few already! Connecting them helps your business run more efficiently and limits human errors made when switching between different services.
+                </p>
+            </div>
+            <div className="column-servContent" data-aos="fade-right" >
+                <img src={sf006} alt="contentImage" />
+            </div>
+        </section>
+        <section className="row-servContent">
+            <div className="column-servContent" data-aos="zoom-out" >
+                <img src={sf007} alt="contentImage" />
+            </div>
+            <div className="column-servContent righText" data-aos="zoom-in">
+                <h2>CUSTOM DEVELOPMENT, PORTALS</h2>
+                <p>
+                    Salesforce can be incredibly flexible, but not every business need is available out-of-the-box. When customization isn’t enough, development can bridge the gap and make sure that your system is perfectly tailored to your needs.
+                </p>
+                <p>
+                    Our experienced team can create everything from custom pricing wizards to document generation portals from scratch.
+                </p>
+            </div>
+        </section>
+        </>
     );
 }
 
 const AppDevelopmentPage = () => {
     return (
-        <div>
+        <div className='appdev-content'>
             <h2>CHECK OUT OUR LATEST APP FOR SALESFORCE</h2>
             <h4>BAOBAB FILES FOR GDRIVE</h4>
             <p>

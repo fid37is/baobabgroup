@@ -1,25 +1,176 @@
-body {
+.abtContainer {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
 }
 
-main {
-    flex-grow: 1;
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.back-btn {
-    background-color: #f5f5f5;
-    color: #551F0C;
-    border: none;
-    font-size: 16px;
-    padding: 4px  20px;
-    width: 20%;
+
+.text-section p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 25px;
 }
-.back-btn:hover {
-    background-color: transparent;
+
+.small-text {
+    font-size: 12px;
 }
-.abtTitle   {
-    color: #551F0C;
-    font-size: 32px;
+
+.xlarge-text {
+    font-size: 38px;
+}
+
+.image-section {
+    width: 100%;
+    display: flex; /* make the image a flex item */
+    align-items: center; /* center the image vertically */
+}
+
+.image-section img {
+    width: 400px;
+    border-radius: 7px;
+}
+
+.image-background-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/btree2.png');
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px; 
+    text-align: left;
+    line-height: 25px;
+}
+
+.center-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-founder {
+    display: flex;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+    .col-founder {
+        flex: 50%;
+    }
+.col-founder img {
+    width: 70%;
+    margin-left: 20%;
+    filter: contrast(1.2) saturate(1.5);
+}
+
+@media screen and (max-width: 600px){
+    .abtContainer {
+        display: block;
+
+    }
+    .image-background-section {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-image: none;
+        background-color: #42660D;
+        background-size: contain;
+        background-position: center;
+    }
+    .overlay-text {
+        position: relatives;
+        width: 100%;
+        color: white;
+        font-size: 16px; 
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .image-background-section .overlay-text,
+    .image-background-section .small-text,
+    .image-background-section  .xlarge-text,
+    .image-background-section  p {
+        padding: 15px;
+    }
+
+    .image-section img {
+        width: 100%;
+        border-radius: 7px;
+    }
+    .row-founder {
+        display: block;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+    
+    .col-founder {
+        width: 95%;
+        padding: 10px;
+    }
+    .column-founder img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .abtContainer {
+        display: block;
+    }
+    .image-background-section {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-image: none;
+        background-color: #42660D;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+    .overlay-text {
+        position: relatives;
+        width: 80%;
+        color: white;
+        font-size: 16px; 
+        text-align: left;
+        line-height: 25px;
+    }
+    .image-background-section .overlay-text,
+    .image-background-section .small-text,
+    .image-background-section  .xlarge-text,
+    .image-background-section  p {
+        padding: 15px;
+    }
+    .row-founder {
+        display: block;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+    
+    .col-founder {
+        width: 95%;
+        padding: 10px;
+    }
+    .column-founder img {
+        width: 100%;
+    }
 }

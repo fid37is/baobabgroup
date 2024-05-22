@@ -24,7 +24,9 @@ function Navbar() {
                         {isOpen ? <FaX /> : <FaBars />}
                     </div>
                     <ul className={`menu-links ${isOpen ? 'show-nav' : ''}`}>
-                        <NavLink to="/home" end activeClassName="active-link" onClick={closeMenu}>Home</NavLink>
+                        <li>
+                            <NavLink to="/home" activeClassName="active-link" onClick={closeMenu}>Home</NavLink>
+                        </li>
                         <li><NavLink to="/about" activeClassName="active-link" onClick={closeMenu}>About Us</NavLink></li>
                         <li><NavLink to="/services" activeClassName="active-link" onClick={closeMenu}>What We Do</NavLink></li>
                         <li><NavLink to="/contact" activeClassName="active-link" onClick={closeMenu}>Contact Us</NavLink></li>

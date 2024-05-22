@@ -1,0 +1,108 @@
+.topArea {
+    background: linear-gradient(to bottom, #3F1816, #D9A998, #61281D, #723021, #833825, #944229, #A54C32);
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200px;
+    color: #fff;
+}
+
+.topArea h1 {
+    float: right;
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    margin-bottom: 5rem;
+    border-bottom: 1px solid #000;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-image, .content-text {
+    flex: 1;
+}
+
+.content-text {
+    padding-top: 0;
+    padding-right: 5rem;
+    width: 70%;
+    margin-left: -25%;
+    
+}
+
+.date {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.content-image img {
+    padding: 0 1.5rem;
+    width: 50%;
+    border-radius: 7px;
+}
+
+.link {
+    text-align: right;
+    padding: 10px 0;
+    margin-right: 5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content-text {
+        display: block;
+        padding-top: 0;
+        padding-right: 1rem;
+        width: 100%;
+    }
+
+    .content, p {
+        display: block;
+        text-align: center;
+    }
+    .content-text {
+        padding-left: .5rem;
+        width: 95%;
+        margin-left: 0;
+        
+    }
+    .content-image img {
+        padding: 0 .5rem;
+        width: 90%;
+    }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .topArea h1 {
+        margin-top: 1.8rem;
+    }
+    .content-text {
+        padding-top: 0;
+        padding-right: 1rem;
+        width: 70%;
+    }
+    .content-image img {
+        padding: 1.8rem 1.5rem;
+        width: 50%;
+        border-radius: 7px;
+    }
+    .date {
+        padding: 0 1.5rem;
+        font-weight: 600;
+        color: gray;
+        margin-bottom: -1rem;
+    }
+
+}

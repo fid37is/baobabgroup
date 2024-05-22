@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Blog from './components/Blog';
 import Foundation from './components/Foundation';
+import Post from './components/Post';
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/foundation" element={<Foundation />} />
           <Route path="/" element={<Navigate to="/home" />} /> 
+          <Route path="/post/:id" element={<Post />} />
         </Routes>
       </div>
     </Router>

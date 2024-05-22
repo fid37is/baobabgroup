@@ -1,0 +1,55 @@
+button.submit-button {
+    width: 35%;
+    background-color: #D9A998;
+    border: none;
+    margin-top: 1rem;
+}
+
+button.submit-button:hover {
+    background-color: transparent;
+    color: #D9A998;
+    border:1px solid #D9A998;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 15vh;
+}
+
+.centered-container button:hover{
+    background-color: #D9A998;
+    color: #fff;
+    border: none;
+}
+
+.centered-container button {
+    width: 20%;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .centered-container button {
+        width: 50%;
+    }
+    .modal-form input, 
+    .modal-form textarea {
+        width: 270px;
+    }
+    .modal-form .submit-button {
+        width: 50%;
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .centered-container button {
+        width: 40%;
+    }
+}
