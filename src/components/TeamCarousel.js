@@ -1,20 +1,20 @@
 // TeamCarousel.js
 import React from 'react';
 import '../components/TeamCarousel.css';
-import mej from '../images/mej.png';
-import stratt from '../images/stratt.png';
+import noImage from '../images/noImage.png';
 
 const TeamCarousel = () => {
     // Custom dummy data
     const teamMembers = [
-        { name: 'Fidelis Agba', designation: 'Tester', image: stratt },
-        { name: 'Oluwaseun Smart', designation: 'Software Developer', image: mej },
-        { name: 'Akinwunmi Adesola', designation: 'Data Scientist', image: stratt },
-        { name: 'Maria Fadeyi', designation: 'Data Scientist', image: stratt },
-        { name: 'Adesoji Adesinya', designation: 'Data Scientist', image: stratt },
-        { name: 'Adesoji Adesinya', designation: 'Data Scientist', image: mej },
-        { name: 'Adesoji Adesinya', designation: 'Data Scientist', image: mej },
-        { name: 'Adesoji Adesinya', designation: 'Data Scientist', image: stratt },
+        { name: 'Fidelis Agba', designation: 'Tester', image: noImage },
+        { name: 'Oluwaseun Smart', designation: 'Software Developer', image: noImage },
+        { name: 'Honor Mason', designation: 'Data Scientist', image: noImage },
+        { name: 'Maria Fadeyi', designation: 'Data Scientist', image: noImage },
+        { name: 'Cyril Obiorah', designation: 'Data Scientist', image: noImage },
+        { name: 'Adesoji Olaitan', designation: 'Data Scientist', image: noImage },
+        { name: 'Samantha Sage', designation: 'Data Scientist', image: noImage },
+        { name: 'Eke Kelechi', designation: 'DevOps Engineer', image: noImage },
+        { name: 'Akinwunmi Akinyemi', designation: 'DevOps Engineer', image: noImage },
         // Add more team members as needed
         ];
     

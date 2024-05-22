@@ -29,10 +29,13 @@
     .carouselTrack h2{
         font-size: 16px;
     }
+        .carouselCard P {
+        text-align: center;
+    }
     
     @keyframes scroll {
         0% { transform: translateX(0); }
-        50% { transform: translateX(calc(-45px * 10)); }
+        50% { transform: translateX(calc(-60px * 12)); }
         100% { transform: translateX(0); }
     }
     

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../styles/Blog.css';
 import Footer from './Footer';
-import BaobabFull from '../images/BaobabFull.png';
+import noImage from '../images/noImage.png';
 
 
 
@@ -34,7 +34,7 @@ const Blog = () => {
                         </div>
                         <div className="content">
                         <div className="content-image">
-                                <img src={post.featured_image || BaobabFull} alt={post.title.rendered} />
+                                <img src={post.featured_image || noImage} alt={post.title.rendered} />
                             </div>
                             <div className="content-text">
                                 <h2>{post.title}</h2>

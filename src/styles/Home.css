@@ -144,6 +144,7 @@
 .form-container h2 {
     font-size: 14px;
     margin: 0;
+    text-align: left;
 }
 
 
@@ -367,7 +368,7 @@ button:hover {
 
 .accordion-section p {
     width: 60%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 5%;
     font-size: 18px;
     line-height: 30px;
@@ -423,11 +424,6 @@ button:hover {
     background-repeat: no-repeat; 
     background-position: right; 
 }
-/* .accordion-section p {
-    text-align: left;
-    font-size: 15px;
-    line-height: 30px;
-} */
 
 @media screen and (max-width: 600px) {
         .accordion-section p {
@@ -449,6 +445,13 @@ button:hover {
         .accordion-section h1 {
             font-size: 30px;
         }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .accordion-content p {
+        margin-left: -7%;
+        width: 90%;
+        
+    }
 }
 
 
