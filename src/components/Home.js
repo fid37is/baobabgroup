@@ -18,7 +18,6 @@
     import FeedBackItems from "../components/FeedBackItems";
     import CardContainer from "../components/CardContainer";
     import PublicationSection from "../components/PublicationSection";
-    import Carousel from "../components/Carousel";
     import certSf from "../images/certSf.png";
     import Team from "../components/Team";
     import TeamCarousel from "../components/TeamCarousel";
