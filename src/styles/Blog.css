@@ -59,26 +59,24 @@
 
 
 @media screen and (max-width: 600px) {
-    .content-text {
-        display: block;
-        padding-top: 0;
-        padding-right: 1rem;
-        width: 100%;
-    }
+
 .topArea h1 {
     padding: 3rem;
+    line-height: 50px;
 }
 
     .content, p {
         display: block;
-        text-align: center;
+        text-align: left;
     }
+
     .content-text {
-        padding-left: .5rem;
+        padding-left: .5rem;    
         width: 95%;
         margin-left: 0;
-        
+        text-align: left;
     }
+
     .content-image img {
         padding: 0 .5rem;
         width: 90%;
@@ -92,6 +90,9 @@
         padding-top: 0;
         padding-right: 1rem;
         width: 70%;
+    }
+    .content-text p {
+        text-align: left;
     }
     .content-image img {
         padding: 1.8rem 1.5rem;

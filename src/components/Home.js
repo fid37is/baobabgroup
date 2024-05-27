@@ -148,7 +148,7 @@
         </div>
         <section className="image-carousel">
             <div>
-            <Carousel />
+            {/* <Carousel /> */}
             </div>
         </section>
         <section

@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
 button.submit-button {
     width: 35%;
     background-color: #D9A998;
@@ -31,6 +35,7 @@ button.submit-button:hover {
 }
 
 @media screen and (max-width: 600px) {
+    
     .centered-container button {
         width: 50%;
     }

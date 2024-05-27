@@ -1,7 +1,7 @@
     body {
         margin-left: 7%;
         margin-right: 7%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Poppins';
         margin-bottom: 0;
         display: flex;
         flex-direction: column;
@@ -10,6 +10,14 @@
 
     main {
         flex-grow: 1;
+    }
+
+    .siteName {
+        margin-left: -7rem;
+        color: #551f0c;
+        font-weight:900;
+        line-height: 25px;
+        font-family: 'Poppins';
     }
 
     first-section {
@@ -65,7 +73,7 @@
         
         .overlay p {
         font-size: 22px;
-        width: 60%;
+        width: 40%;
         text-align: center;
         line-height: 35px;
         }
@@ -82,10 +90,17 @@
         }
         
         @media (max-width: 600px) {
+            body {
+                font-family: 'Poppins';
+            }
         .image-overlay-container {
             grid-template-columns: 1fr;
             margin-bottom: 8%;
         }
+        .siteName {
+            display: none;
+        }
+    
         .overlay h1 {
             font-size: 20px;
         }
@@ -104,6 +119,11 @@
         .image-overlay-container {
             width: 100%;
         }
+        .siteName {
+            margin-left: .5em;
+            font-size: 14px;
+        }
+    
     }  
 
 
@@ -367,16 +387,15 @@ button:hover {
 }
 
 .accordion-section p {
-    width: 60%;
-    text-align: left;
+    width: 70%;
+    text-align: center;
     margin-bottom: 5%;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 35px;
 }
 
 .accordion-section h1 {
     font-size: 35px;
-    font-family: 'Poppins';
 }
 
 
@@ -394,7 +413,6 @@ button:hover {
     cursor: pointer;
     font-size: 14px;
     margin-left: 10%;
-    font-family: 'Poppins';;
 }
 
 .accordion-header img {
@@ -469,13 +487,13 @@ button:hover {
 .experience-section h1 {
     width: 70%;
     font-size: 35px;
-    font-family: 'Poppins';
 }
 
 .experience-section p {
     margin-bottom: 5%;
     font-size: 20px;
     width: 90%;
+    text-align: center;
 }
 
 .content-area {
@@ -652,11 +670,11 @@ button:hover {
     }
         .center {
             text-align: center;
+            line-height: 35px;
         }
 
         .feedback-section h1 {
             font-size: 35px;
-            font-family: 'Poppins';
             width: 70%;
         }
         .feedback-section p {
@@ -919,18 +937,17 @@ button:hover {
 .teamSection h2,
 .teamSection .desc {
     text-align: center;
+    line-height: 35px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .teamSection h2 {
     font-size: 32px;
-    font-family: 'Poppins';
 }
 
 p.desc {
     font-size: 22px;
-    font-family: 'Poppins';
     padding: 10px;
     width: 60%;
 }
@@ -941,7 +958,6 @@ p.desc {
     
     .teamSection .desc {
         font-size: 20px;
-        font-family: 'Poppins';
         width: 80%;
     }
     

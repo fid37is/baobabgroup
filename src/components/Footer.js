@@ -5,6 +5,7 @@
     import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
     import Baobab_logo from '../images/Baobab_logo.png';
     import { Email, PhoneNumber} from '../components/ContactInfo';
+    import FeedbackButton from './FeedbackButton';
 
     const Footer = () => {
     return (
@@ -29,7 +30,7 @@
             <h3>Customer Service</h3>
             <ul>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
-                <li><Link href="#">Share Feedback</Link></li>
+            <li><FeedbackButton /></li>
             </ul>
             </div>
             <div className="footer-column">

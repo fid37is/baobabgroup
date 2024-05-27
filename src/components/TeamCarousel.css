@@ -6,13 +6,13 @@
     
     .carouselTrack {
         display: flex;
-        animation: scroll 20s linear infinite;
+        animation: scroll 60s linear infinite;
     }
     
     .carouselCard {
         flex: 0 0 auto;
         width: 200px;
-        height: 250px;
+        height: 300px;
         margin-right: 1rem;
         padding: 1rem;
         border: 1px solid #551f0c;
@@ -35,7 +35,7 @@
     
     @keyframes scroll {
         0% { transform: translateX(0); }
-        50% { transform: translateX(calc(-60px * 12)); }
+        50% { transform: translateX(calc(-150px * 17)); }
         100% { transform: translateX(0); }
     }
     

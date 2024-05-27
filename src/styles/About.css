@@ -16,6 +16,7 @@
     width: 100%;
     font-size: 13px;
     line-height: 25px;
+    text-align: left;
 }
 
 .small-text {
@@ -28,8 +29,8 @@
 
 .image-section {
     width: 100%;
-    display: flex; /* make the image a flex item */
-    align-items: center; /* center the image vertically */
+    display: flex;
+    align-items: center; 
 }
 
 .image-section img {

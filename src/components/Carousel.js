@@ -8,13 +8,6 @@ const Carousel = () => {
 
     const customerLogo = [
         { image: mitg8 },
-        { image: mitg8 },
-        { image: mitg8 },
-        { image: mitg8 },
-        { image: mitg8 },
-        { image: mitg8 },
-        { image: mitg8 },
-        { image: mitg8 },
         // Add more team members as needed
         ];
     
