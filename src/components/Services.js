@@ -11,7 +11,6 @@ import sf004 from '../images/sf004.png';
 import sf005 from '../images/sf005.png';
 import sf006 from '../images/sf006.png';
 import sf007 from '../images/sf007.png';
-import gdrive from '../images/gdrive.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -196,7 +195,7 @@ const AppDevelopmentPage = () => {
                     </p>
                 </div>
                 <div className="col-appdev">
-                    <img src={gdrive} alt="DevImg" />
+                    <img src={sf001} alt="DevImg" />
                 </div>
             </div>
         </div>
