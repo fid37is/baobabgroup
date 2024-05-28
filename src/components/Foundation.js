@@ -10,6 +10,7 @@
     import ohr2 from '../images/ohr2.jpg';
     import '../styles/Foundation.css';
     import CallButton from '../components/CallButton';
+    import PageTitle from './PageTitle';
 
     const Container = styled.div`
     display: flex;
@@ -142,10 +143,13 @@ const LargeImage = styled.img`
 
     return (
         <>
+        <PageTitle 
+            title="Baobab Foundation" 
+            subtitle="Altruistic Community Support" 
+        />
         <Container>
             <div className="found-row heading">
                 <div className="column title-description">
-                    <h1>Baobab Foundation</h1>
                     <Text className='glassy-background'>
                         <p>We are committed to giving back to our community and supporting causes that align with our values.</p>
                         <p>As part of this commitment, we have established a non-profit organization dedicated to transforming lives and fostering economic growth by equipping developers from low-income backgrounds in Lagos, Nigeria, with in-demand, marketable skills. Our mission is to bridge the gap between talent and opportunity by providing high-quality, accessible training in Salesforce/CRM, web development, mobile app creation, and other cutting-edge technologies.</p>

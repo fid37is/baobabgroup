@@ -4,6 +4,7 @@ import '../styles/Contact.css';
 import '../components/ContactInfo.css';
 import {  FaLocationDot } from "react-icons/fa6";
 import { PhoneNumber, Email } from '../components/ContactInfo';
+import PageTitle from './PageTitle';
 
 function Contact() {
     const [contact, setContact] = useState({
@@ -39,21 +40,11 @@ function Contact() {
 
     return (
         <>
+        <PageTitle 
+            title="Contact Us" 
+            subtitle="Please contact us or fill out the form below, and we will get back to you in no time." 
+        />
         <div className="contact-container">
-            <div className="row-contact">
-                <div className="col-contact">
-                    <h1>Contact Us</h1>
-                    <p className='call'>
-                        Please contact us or fill out the form below, and we will get back to you in no time.
-                    </p>
-                </div>
-                <div className="col-contact">
-                     {/* TODO: Embed map here */}
-                    <div className="column map-area">
-                        Map goes here
-                    </div>
-                </div>
-            </div>
             <div className="row-contact">
                 <div className="col-contact contact-bg">
                 <PhoneNumber number="+19197249260" />
@@ -86,6 +77,13 @@ function Contact() {
                     <h4>Sunday: 10AM – 5PM</h4>
                 </div>
             </div>
+            <div className="row-contact">
+    <div className="column map-area">
+    <iframe title='BaobabLocation'
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3024.2447496743944!2d-74.0133173!3d40.7126283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1716830830151!5m2!1sen!2sng" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</div>
         </div>
         <Footer />
         </>

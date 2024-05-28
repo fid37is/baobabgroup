@@ -14,8 +14,8 @@
 
 .text-section p {
     width: 100%;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 30px;
     text-align: left;
 }
 
@@ -72,13 +72,22 @@
     align-items: center;
 }
 
-    .col-founder {
-        flex: 50%;
-    }
+.col-founder {
+    flex: 50%;
+}
 .col-founder img {
     width: 70%;
     margin-left: 20%;
     filter: contrast(1.2) saturate(1.5);
+}
+.col-founder p {
+    line-height: 30px;
+    font-size: 14px;
+    margin-left: -10%;
+}
+.col-founder .xlarge-text, 
+.col-founder .small-text {
+    margin-left: -10%;
 }
 
 @media screen and (max-width: 600px){

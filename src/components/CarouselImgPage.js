@@ -5,8 +5,8 @@ import CarouselForm from '../components/CarouselForm';
 const CarouselImgPage = ({ onImageSubmit }) => {
     return (
         <div>
-        <h1>Upload Image</h1>
-        <CarouselForm onImageSubmit={onImageSubmit} />
+            <h1>Upload Image</h1>
+            <CarouselForm onImageSubmit={onImageSubmit} />
         </div>
     );
 };

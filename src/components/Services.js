@@ -13,6 +13,7 @@ import sf006 from '../images/sf006.png';
 import sf007 from '../images/sf007.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import PageTitle from './PageTitle';
 
 const Services = () => {
     const [activePage, setActivePage] = useState('Salesforce');
@@ -30,14 +31,10 @@ const Services = () => {
     return (
         <>
         <div className="services">
-            <div className="found-row heading">
-                <div className="column-serve">
-                    <h1>What We Do</h1>
-                </div>
-                <div className="column-serve">
-                    {/* Empty column */}
-                </div>
-            </div>
+        <PageTitle 
+            title="What We Do" 
+            subtitle="Delivering Effective CRM Solutions" 
+        />
             <div className="row-serve button-container">
                 <button className={`button ${activePage === 'Salesforce' ? 'active' : ''}`} onClick={() => handleClick('Salesforce')}>Salesforce</button>
                 <button className={`button ${activePage === 'App Development' ? 'active' : ''}`} onClick={() => handleClick('App Development')}>App Development</button>
@@ -172,7 +169,7 @@ const AppDevelopmentPage = () => {
             </div>
             <div className="row-appdev">
                 <div className="Col-appdev">
-                    <h4>BAOBAB FILES FOR GDRIVE</h4>
+                    <h3>BAOBAB FILES FOR GDRIVE</h3>
                     <p>
                         Salesforce is a powerful tool, and apps can be a great way to customise your org and integrate Salesforce with other products key to your business. Baobab Drive bridges the gap between your Salesforce instance and Google Drive. Using Baobab Files, you can:
                     </p>

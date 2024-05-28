@@ -23,6 +23,7 @@
     import TeamCarousel from "../components/TeamCarousel";
     import "../components/TeamCarousel.css";
     import Footer from '../components/Footer';
+    import Carousel from './Carousel';
 
     const Home = ({ posts }) => {
     const text = "CREATE - CONNECT - GROW";
@@ -145,9 +146,9 @@
         {isFormVisible ? <FaX /> : 'Request A Call'}
         </button>
         </div>
-        <section className="image-carousel">
+        <section className="carousel-container">
             <div>
-            {/* <Carousel /> */}
+                <Carousel />
             </div>
         </section>
         <section

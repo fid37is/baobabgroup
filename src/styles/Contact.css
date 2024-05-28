@@ -18,7 +18,10 @@
     padding: 20px;
 }
 
-.col-contact h1, p {
+.col-contact h1 {
+    text-align: right;
+} 
+.col-contact h4 {
     text-align: left;
 }
 
@@ -64,6 +67,7 @@ input, textarea {
     border: 1px solid #F7B585;
     padding: 20px 50px;
     width: 100%;
+    margin: 40px 0;
 }
 
 .workingHours h1 {
@@ -107,6 +111,10 @@ input, textarea {
 @media (max-width: 480px) {
     .row-contact {
         flex-direction: column;
+    }
+
+    .col-contact h1 {
+        text-align: left;
     }
 
     .form-bg form {

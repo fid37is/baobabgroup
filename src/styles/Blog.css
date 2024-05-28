@@ -8,14 +8,6 @@
     color: #fff;
 }
 
-.topArea h1 {
-    float: right;
-    padding: 5rem;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
 
 .post {
     margin-bottom: 5rem;
@@ -36,6 +28,7 @@
     padding-right: 5rem;
     width: 70%;
     margin-left: -25%;
+    line-height: 30px;
     
 }
 
@@ -59,12 +52,6 @@
 
 
 @media screen and (max-width: 600px) {
-
-.topArea h1 {
-    padding: 3rem;
-    line-height: 50px;
-}
-
     .content, p {
         display: block;
         text-align: left;

@@ -40,6 +40,7 @@
 
 .glassy-background p {
     width: 70%;
+    line-height: 25px;
 }
 
 @media screen and (max-width: 600px) {
@@ -59,6 +60,8 @@
     }
     .column p {
         font-size: 18px;
+        text-align: left;
+        line-height: 30px;
     }
     .glassy-background p {
         width: 95%;

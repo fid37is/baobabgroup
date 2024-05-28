@@ -1,0 +1,29 @@
+.pageTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: #000000;
+    background: #2D3130;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+}
+
+.pageTitle h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+.pageTitle .subTitle {
+    margin: 0;
+    font-size: 1em;
+    padding: 15px 5px;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoints */
+    .pageTitle .subTitle {
+        text-align: right;
+    }
+}

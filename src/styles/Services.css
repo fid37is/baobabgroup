@@ -113,9 +113,19 @@
 .col-appdev img {
     width: 100%;
     height: auto;
-    border-radius: 7px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-bottom: auto;
     padding: 40px 15px;
     filter: contrast(1.2) saturate(1.5);
+}
+
+.Col-appdev p, li {
+    line-height: 30px;
+}
+
+.appdevTitle h2 {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {

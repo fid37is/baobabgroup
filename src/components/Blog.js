@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Blog.css';
 import Footer from './Footer';
 import noImage from '../images/noImage.png';
-
+import PageTitle from './PageTitle';
 
 
 const Blog = () => {
@@ -20,12 +20,13 @@ const Blog = () => {
 
     return (
         <div className="blog">
-            <div className="section1">
-                <h1 className="heading">Blog Posts</h1>
-            </div>
-            <div className="topArea">
-                <h1>Engaging, Informative, Visual</h1>
-            </div>
+            <PageTitle 
+                title="Contact Us" 
+                subtitle="Engaging, Informative, Visual." 
+            />
+            {/* <div className="topArea">
+                <h1></h1>
+            </div> */}
             <div className="post-container">
                 {posts.map(post => (
                     <div key={post.id} className="post">

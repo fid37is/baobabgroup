@@ -7,6 +7,7 @@ import fdr1 from '../images/fdr1.png';
 import certSf from '../images/certSf.png';
 import '../styles/About.css';
 import CallButton from '../components/CallButton';
+import PageTitle from './PageTitle';
 
 
 
@@ -20,9 +21,10 @@ import CallButton from '../components/CallButton';
     
         return (
         <>
-        <div className="heading">
-            <h1>About Us</h1>
-        </div>
+        <PageTitle 
+            title="About Us" 
+            subtitle="Discover Our Journey." 
+        />
         <div className="abtContainer">
             <div className="text-section">
                 <div className="small-text">Get to know us</div>
