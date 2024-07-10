@@ -2,7 +2,7 @@
     import React from 'react';
     import '../components/Footer.css';
     import { Link, NavLink } from 'react-router-dom';
-    import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+    import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
     import Baobab_logo from '../images/Baobab_logo.png';
     import { Email, PhoneNumber} from '../components/ContactInfo';
     import FeedbackButton from './FeedbackButton';
