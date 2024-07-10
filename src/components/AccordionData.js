@@ -84,14 +84,14 @@ const accordionData = [
     },
 
     { 
-        title: 'CUSTOM DEVELOPMENT PORTALS', 
+        title: 'AI IN SALESFROCE', 
         content: (
             <>
             <p>
-                Salesforce can be incredibly flexible, but not every business need is available out-of-the-box. When customization isn’t enough, development can bridge the gap and make sure that your system is perfectly tailored to your needs. 
+                AI is revolutionizing CRM and business overall. It helps in generating marketing content, rapidly training sales and service representatives on clients, and supporting customer service. AI integrated into Salesforce provides top AI capabilities in a user-friendly manner, including built-in security features. 
             </p>
             <p>
-                Our experienced team can create everything from custom pricing wizards to document generation portals from scratch.
+                We’d love to walk you through what’s available and help you start changing your game with AI.
             </p>
             </>
         )

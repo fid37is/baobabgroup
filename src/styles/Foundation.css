@@ -1,71 +1,50 @@
-.found-row {
+
+.found-row .row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    width: 97%;
+    border: 2px dotted #333;
+    padding: 0 15px;
 }
 
-.heading {
-    width: 100%;
-}
-
-.column {
+.col {
     flex: 1;
-    width: 100%;
-    height: auto;
-    margin-right: 20px;
+    padding: 15px 0;
+    gap: 15px;
 }
 
-.glassy-background {
-    position: relative;
-    max-width: 100vw;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.glassy-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(../images/BaobabFaded.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: right;
-    opacity: 0.5; /* Adjust this value to change the darkness of the hue */
-    z-index: -1;
+.first-letter-big::first-letter {
+    font-size: 2em;
+    float: left;
+    color: #333;
 }
 
 
-.glassy-background p {
-    width: 70%;
-    line-height: 25px;
+/* For tablet devices */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        padding: 0 1em;
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    .found-row {
-        display: block;
+/* For mobile devices */
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
     }
-    .glassy-background p {
-        width: 95%;
-    }
-    
-}
 
-@media (min-width: 601px) and (max-width: 1024px) {
-    .found-row {
-        display: block;
-        align-items: center;
+    .col {
+        padding: 0 0.5em;
+        margin-bottom: 20px;
     }
-    .column p {
-        font-size: 18px;
-        text-align: left;
-        line-height: 30px;
+
+    .first-letter-big::first-letter {
+        font-size: 1.5em;
     }
-    .glassy-background p {
-        width: 95%;
-    }
-    
-    
 }

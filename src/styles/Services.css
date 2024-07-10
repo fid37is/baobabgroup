@@ -59,7 +59,7 @@
 }
 
 .row-serve .button.active {
-    background-color: #F7B585;
+    background-color: #5d1e07;
     border-bottom: 0.5em solid #f9f9f9;
     color: #fff;
 }
@@ -113,7 +113,6 @@
 .col-appdev img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
     margin-top: 10%;
     margin-bottom: auto;
     padding: 40px 15px;

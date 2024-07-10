@@ -15,6 +15,7 @@
     const Container = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
     min-height: 100vh;
     `;
 
@@ -26,7 +27,7 @@
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        width: '80%',
+        width: '100%',
         height: '80%',
         },
     };
@@ -38,13 +39,6 @@
     margin: auto;
     filter: contrast(1.2) saturate(1.5);
 `;
-
-
-    const Text = styled.p`
-    text-align: left;
-    width: 100%;
-    padding:15px
-    `;
 
     const ImageContainer = styled.div`
     display: flex;
@@ -149,31 +143,20 @@ const LargeImage = styled.img`
         />
         <Container>
             <div className="found-row heading">
-                <div className="column title-description">
-                    <Text className='glassy-background'>
-                        <p>We are committed to giving back to our community and supporting causes that align with our values.</p>
-                        <p>As part of this commitment, we have established a non-profit organization dedicated to transforming lives and fostering economic growth by equipping developers from low-income backgrounds in Lagos, Nigeria, with in-demand, marketable skills. Our mission is to bridge the gap between talent and opportunity by providing high-quality, accessible training in Salesforce/CRM, web development, mobile app creation, and other cutting-edge technologies.</p>
-                        
-                        <p>
-                            Through our intensive programs and practical, hands-on approach, our students develop the expertise they need to excel in the fast-paced world of technology, securing well-paid positions and contributing to the growth of the local economy.
-                        </p>
-                        <p>
-                            At EmpowerTech Lagos, we believe that everyone deserves a chance to reach their full potential. By removing financial barriers and offering scholarships to deserving candidates, we strive to create a diverse and inclusive learning environment that empowers our students to overcome challenges, unlock their potential, and transform their lives.
-                        </p>
-                        <p>
-                            To support the non-profit's operations, our company provides both financial resources and employee time. This means that our employees have the opportunity to volunteer their time to support the non-profit's initiatives, and the company provides financial support to cover operating expenses such as rent, utilities, and supplies.
-                        </p>
-                        <p>
-                            By providing both financial and human resources, we are able to ensure that the non-profit can operate efficiently and effectively, while also giving our employees the opportunity to give back to the community and support a cause they are passionate about.
-                        </p>
-                        <p>
-                            Join us in our quest to make a lasting impact on individuals and communities in Lagos, Nigeria, by providing access to world-class tech education and fostering the leaders of tomorrow. Together, we can change the world, one developer at a time.
-                        </p>
-                    </Text>
-                </div>
-                
+                        <div className="row">
+                            <div className="col">
+                                <p className="first-letter-big">We are committed to giving back to our community and supporting causes that align with our values.</p>
+                                <p>As part of this commitment, we have established a non-profit organization dedicated to transforming lives and fostering economic growth by equipping developers from low-income backgrounds in Lagos, Nigeria, with in-demand, marketable skills. Our mission is to bridge the gap between talent and opportunity by providing high-quality, accessible training in Salesforce/CRM, web development, mobile app creation, and other cutting-edge technologies.</p>
+                                <p>Through our intensive programs and practical, hands-on approach, our students develop the expertise they need to excel in the fast-paced world of technology, securing well-paid positions and contributing to the growth of the local economy.</p>
+                                <p>At EmpowerTech Lagos, we believe that everyone deserves a chance to reach their full potential. By removing financial barriers and offering scholarships to deserving candidates, we strive to create a diverse and inclusive learning environment that empowers our students to overcome challenges, unlock their potential, and transform their lives.</p>
+                            </div>
+                            <div className="col">
+                                <p>To support the non-profit's operations, our company provides both financial resources and employee time. This means that our employees have the opportunity to volunteer their time to support the non-profit's initiatives, and the company provides financial support to cover operating expenses such as rent, utilities, and supplies.</p>
+                                <p>By providing both financial and human resources, we are able to ensure that the non-profit can operate efficiently and effectively, while also giving our employees the opportunity to give back to the community and support a cause they are passionate about.</p>
+                                <p>Join us in our quest to make a lasting impact on individuals and communities in Lagos, Nigeria, by providing access to world-class tech education and fostering the leaders of tomorrow. Together, we can change the world, one developer at a time.</p>
+                            </div>
+                        </div>
             </div>
-            
 
             <OfficeMomentsRow>
                 <OfficeMomentsTitle>Group Moments</OfficeMomentsTitle>

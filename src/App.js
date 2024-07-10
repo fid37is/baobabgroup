@@ -7,10 +7,12 @@ import Navbar from './components/Navbar';
 import Blog from './components/Blog';
 import Foundation from './components/Foundation';
 import Post from './components/Post';
-import './App.css'
+import BaobabChat from './components/BaobabChat';
+import './App.css';
 
 function App() {
   return (
+    <><BaobabChat />
     <Router>
       <div>
         <Navbar />
@@ -26,6 +28,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </>
   );
 }
 

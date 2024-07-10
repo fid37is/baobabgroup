@@ -15,13 +15,12 @@
     import accordionData from "./AccordionData";
     import AOS from "aos";
     import "aos/dist/aos.css";
+    import CallButton from "./CallButton";
     import FeedBackItems from "../components/FeedBackItems";
     import CardContainer from "../components/CardContainer";
     import PublicationSection from "../components/PublicationSection";
     import certSf from "../images/certSf.png";
     import Team from "../components/Team";
-    import TeamCarousel from "../components/TeamCarousel";
-    import "../components/TeamCarousel.css";
     import Footer from '../components/Footer';
     import Carousel from './Carousel';
 
@@ -220,7 +219,7 @@
         </section>
         <section className="request-section">
             <div className="column">
-            <h2>Request for our Whitepaper</h2>
+            <h2>Request A Call Back</h2>
             </div>
             <div className="column">
             <div className="email-collection">
@@ -228,7 +227,7 @@
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Your email"
+                placeholder="Your email/phone number"
                 />
                 <button type="submit">Send</button>
             </div>
@@ -252,13 +251,13 @@
             />
         </section>
         <section className="teamSection">
-            <h2>Meet The Team</h2>
-            <p className="desc">Our team comprises a diverse group of talented individuals whose expertise drives our organization forward.</p>
+            <h2>Meet Our Founders</h2>
+            <p className="desc">Pioneering Progress: The Minds Behind Our Mission</p>
             <Team />
-            <div className="carouselContainer">
-            <TeamCarousel />
-            </div>
         </section>
+        <div className="centered-container">
+                <CallButton />
+            </div>
         <section className="footerSection">
             <Footer />
         </section>

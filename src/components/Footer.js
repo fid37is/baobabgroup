@@ -37,9 +37,7 @@
             <h3>Address</h3>
             <p>One World Trade, Suite 8500 <br></br>New York, NY 10007</p>
             <div className="social-icons">
-                <Link href="#"><FaInstagram /></Link>
                 <Link href="#"><FaFacebookF /></Link>
-                <Link href="#"><FaXTwitter /></Link>
                 <Link href="#"><FaLinkedinIn /></Link>
             </div>
             </div>

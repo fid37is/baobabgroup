@@ -20,9 +20,10 @@
     margin: 0;
     font-size: 1em;
     padding: 15px 5px;
+    color: #ffffff;
 }
 
-@media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoints */
+@media (max-width: 768px) { 
     .pageTitle .subTitle {
         text-align: right;
     }

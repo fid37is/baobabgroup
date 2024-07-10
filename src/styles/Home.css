@@ -13,7 +13,7 @@
     }
 
     .siteName {
-        margin-left: -7rem;
+        margin-left: -8%;
         color: #551f0c;
         font-weight:900;
         line-height: 25px;
@@ -76,6 +76,7 @@
         width: 40%;
         text-align: center;
         line-height: 35px;
+        color: white;
         }
         
         .overlay h1:after {
@@ -387,16 +388,28 @@ button:hover {
 }
 
 /* Services Section Styles */
+.accordion {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
 .accordion-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
+    position: relative;
+    padding-left: 0px;
+    background-size: 20%; 
+    background-repeat: no-repeat; 
+    background-position: right; 
 }
 
 .accordion-section p {
     width: 70%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 5%;
     font-size: 20px;
     line-height: 35px;
@@ -404,14 +417,6 @@ button:hover {
 
 .accordion-section h1 {
     font-size: 35px;
-}
-
-
-.accordion {
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
 }
 
 .accordion-header {
@@ -443,12 +448,8 @@ button:hover {
     
 }
 
-.accordion-section {
-    position: relative;
-    padding-left: 0px;
-    background-size: 20%; 
-    background-repeat: no-repeat; 
-    background-position: right; 
+.accordion-content p {
+    text-align: left;
 }
 
 @media screen and (max-width: 600px) {
@@ -511,8 +512,6 @@ button:hover {
     background-image: url('../images/xperinceImg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.186);
-    background-blend-mode: overlay;
 }
 
 .empty-column {
@@ -528,8 +527,9 @@ button:hover {
 }
 
 .row-xp {
-    width: 70%;
+    width: 90%;
     text-align: left;
+    line-height: 30px;
 }
 
 .row-xp h2 {
@@ -539,12 +539,8 @@ button:hover {
 }
 
 .row-xp p {
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
-}
-
-.row-xp  {
-    line-height: 30px;
 }
 
 .loneText {
@@ -552,8 +548,9 @@ button:hover {
     margin-left: -200px;
     border-top: 1px solid black;
     width: 100%;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 30px;
+
 }
 
     @keyframes slideInFromLeft {
@@ -702,7 +699,7 @@ button:hover {
 
         
         .card {
-            background-color: rgba(128, 128, 128, 0.13);
+            background-color: rgba(128, 128, 128, 0.083);
             padding: 20px;
             width: 250px;
             border-radius: 7px;
@@ -845,10 +842,10 @@ button:hover {
 }
 
 .request-section .column input  {
-    margin-top: 4px;
-    border: none;
-    padding: 5px 8px;
+    border: none;;
     transform: none;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .request-section .column input::placeholder {
@@ -860,13 +857,12 @@ button:hover {
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
 }
 
-.email-collection input,
-.email-collection button {
-    margin: 0 10px;
+.email-collection input {
+    width: 70%;
 }
 
 @media screen and (max-width: 600px) {

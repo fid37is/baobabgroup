@@ -33,16 +33,15 @@ function Navbar() {
                         </li>
                         <li><NavLink to="/about" activeClassName="active-link" onClick={closeMenu}>About Us</NavLink></li>
                         <li><NavLink to="/services" activeClassName="active-link" onClick={closeMenu}>What We Do</NavLink></li>
-                        <li><NavLink to="/contact" activeClassName="active-link" onClick={closeMenu}>Contact Us</NavLink></li>
-                        <li><NavLink to="/blog" activeClassName="active-link" onClick={closeMenu}>Blog</NavLink></li>
+                        <li><NavLink to="/foundation" activeClassName="active-link" onClick={closeMenu}>Our Foundation</NavLink></li>
                         </ul>
 
                     <div className="call-chat">
                         <PhoneNumber className='phone contactInfo' number="+1 (919) 724-9260" />
                     </div>
                     <div className="button-container">
-                        <NavLink to="/foundation" onClick={closeMenu}>
-                            <button className='ourfound'>Our Foundation</button>
+                        <NavLink to="/contact" onClick={closeMenu}>
+                            <button className='ourfound'>Contact Us</button>
                         </NavLink>
                     </div>
                 </div>
